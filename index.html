@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <link rel="preload" as="image" href="assets/images/mature-woman-responsive-768.webp" type="image/webp" />
+  <!-- Load it asynchronously -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    media="print" onload="this.media='all'" />
+
+  <!-- Fallback for very old browsers -->
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  </noscript>
+
+  <title>SouthWest Cooling and Heating</title>
+</head>
+
+<body>
+  <header class="d-flex flex-column align-content-center w-100">
+    <!-- top bar -->
+    <div id="top-bar" class="d-flex bg-accent-3">
+      <div class="custom-container">
+        <div class="tagline">
+          <p>RUNNING ON TRUST <span class="fw-bold">SINCE 1980</span></p>
+        </div>
+        <nav id="utility-nav" class="d-flex justify-content-center justify-content-md-end z-1"
+          aria-label="Utility Navigation">
+          <a href="#" class="bg-accent-2 custom-button blue"><span class="text">Get in Touch</span></a>
+          <a href="#" class="bg-accent-1 custom-button orange"><span class="text">Schedule Now</span></a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- bottom bar -->
+    <div id="bottom-bar">
+      <div class="custom-container">
+        <div id="logo" class="custom-site-logo">
+          <a href="#">
+            <img src="assets/images/southwest-cooling-heating-logo.png" alt="Site Logo" />
+          </a>
+        </div>
+
+        <div class="header-contact">
+          <div class="header-contact-top">
+            <span class="accent-1 text-uppercase fst-italic">Call</span>
+            <a href="tel:1234567890" class="header-contact-phone">123.456.7890</a>
+            <p>always the best service in location!</p>
+          </div>
+
+          <nav id="main-nav" class="navbar navbar-expand-lg" aria-label="Main Navigation">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="position-relative">
+      <div class="d-flex custom-container">
+        <div class="custom-round-border">
+          <p class="accent-1 fst-italic">LOREM IPSUM RESIDENTIAL</p>
+          <h1 class="accent-2 fst-italic">
+            Heating & Cooling Services Are Off & Running in St. George, UT
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, cons8ectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <a href="#" class="bg-accent-1 custom-button orange"><span class="text">Schedule Now</span></a>
+        </div>
+
+        <figure class="position-relative">
+          <img src="assets/images/mature-woman-responsive-768.webp" srcset="
+    assets/images/mature-woman-responsive-480.webp 480w,
+    assets/images/mature-woman-responsive-768.webp 768w
+  " sizes="(max-width: 480px) 480px,
+        768px" alt="Mature Woman Turning Control Dial on Digital Central unit in her home" />
+
+      </div>
+
+      <div id="bg-layer-bottom">
+        <img src="assets/images/dots and mountains.png"
+          alt="Background image featuring stylized mountains with a pattern of dots" />
+      </div>
+
+      <div id="bg-layer-front">
+        <img src="assets/images/mountain-and-logo.webp " srcset="
+              assets/images/mountain-and-logo-responsive-480.webp   480w,
+              assets/images/mountain-and-logo-responsive-768.webp   768w,
+              assets/images/mountain-and-logo-responsive-1024.webp 1024w,
+              assets/images/mountain-and-logo.webp                 1646w
+            " sizes="(max-width: 480px) 480px,
+         (max-width: 768px) 768px,
+         (max-width: 1024px) 1024px,
+         1646px" alt="Background image featuring stylized mountains with site's brand" />
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/custom.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won’t be available)
+
+$font-family-sans-serif: "Monteserrat", system-ui, -apple-system, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1.25rem;
+
+ul li,
+span {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800 !important;
+}
+
+$theme-colors: (
+  "primary": #222222,
+  "secondary": #ffffff,
+);
+
+.accent-1 {
+  color: #eb7f54;
+}
+
+.accent-2 {
+  color: #1fa4b3;
+}
+
+.w-inherit {
+  width: inherit;
+}
+
+p {
+  margin: 0 !important;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  background: #38aebc;
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+
+.custom-button {
+  font-size: 1.125rem;
+  padding: 20px 24px;
+  text-decoration: none !important;
+  font-weight: 800;
+  font-style: italic;
+  color: #fff !important;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  overflow: hidden;
+  position: relative;
+  transition: 300ms cubic-bezier(0.83, 0, 0.17, 1);
+
+}
+
+.custom-button .text {
+  position: relative;
+  z-index: 1;
+  transition: color 700ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.custom-button.blue::after {
+  content: "";
+  height: calc(300% + 1em);
+  width: 0;
+  position: absolute;
+  translate: -50% -50%;
+  inset: 50%;
+  rotate: 30deg;
+  background-color: #c5f7fc;
+  transition: 1000ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.custom-button.orange::after {
+  content: "";
+  height: calc(300% + 1em);
+  width: 0;
+  position: absolute;
+  translate: -50% -50%;
+  inset: 50%;
+  rotate: 30deg;
+  background-color: #FCD0AD;
+  transition: 1000ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.custom-button.blue:hover .text,
+.custom-button.orange:hover .text {
+  color: #063046;
+  // position: relative;
+  // z-index: 1;
+}
+
+.custom-button:hover::after {
+  width: calc(120% + 1em);
+}
+
+custom-button:active {
+  scale: 0.98;
+  filter: brightness(0.9);
+}
+
+
+.accent-3 {
+  color: #063046;
+}
+
+.accent-4 {
+  color: #93d5db;
+}
+
+.bg-accent-3 {
+  background: #063046;
+}
+
+.bg-accent-1 {
+  background: #eb7f54;
+}
+
+.bg-accent-2 {
+  background: #1fa4b3;
+}
+
+.bg-accent-4 {
+  background: #93d5db;
+}
+
+.custom-container {
+  max-width: 1313px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  #bottom-bar {
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #bottom-bar .custom-container {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 40px 0;
+}
+
+.tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+}
+
+.custom-site-logo img {
+  width: 373px;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  .custom-site-logo {
+    position: absolute;
+    left: 0;
+    top: -43px;
+    z-index: 1999;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-contact {
+    padding: 20px 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #bottom-bar .custom-container {
+    justify-content: space-between;
+  }
+
+  .custom-site-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-site-logo img {
+    width: 150px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-site-logo img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  #utility-nav {
+    margin-bottom: -15px;
+  }
+}
+
+.header-contact-top {
+  text-align: center;
+}
+
+.header-contact-top p {
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (min-width: 769px) {
+  .header-contact-top p {
+    max-width: 250px;
+  }
+}
+
+.header-contact-phone {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 16px;
+  font-style: italic;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-contact-phone:hover {
+  color: #063046;
+}
+
+#main-nav>ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main-nav .navbar-nav {
+  display: flex;
+  gap: 10px;
+}
+
+#main-nav .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #eb7f54;
+  font-style: italic;
+  line-height: 16px;
+}
+
+#main-nav .nav-link:hover,
+#main-nav .nav-link.active {
+  color: #063046;
+}
+
+@media (min-width: 1314px) {
+  .custom-round-border {
+    padding-left: 140px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 50%;
+  }
+
+  figure {
+    width: 55%;
+  }
+
+  figure>img {
+    width: 100%;
+  }
+
+  .custom-round-border::before {
+    content: "";
+    position: absolute;
+    max-width: 900px;
+    width: 100%;
+    height: 110%;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    background: linear-gradient(to bottom, #c5f7fc, #93d5db);
+    border-radius: 48%;
+    opacity: 0.95;
+  }
+}
+
+figure {
+  position: relative;
+  z-index: 2;
+  padding: 50px 0;
+}
+
+#bg-layer-bottom {
+  position: absolute;
+  z-index: 1;
+  top: 23.5em;
+  width: 100%;
+}
+
+#bg-layer-bottom>img,
+#bg-layer-front>img {
+  width: 100%;
+}
+
+section>.custom-container {
+  position: relative;
+  z-index: 4;
+}
+
+#bg-layer-front {
+  position: absolute;
+  z-index: 5;
+  width: 101%;
+  top: 33em;
+}
+
+section {
+  margin-bottom: 19em;
+  background: radial-gradient(circle, #93d5db 0%, transparent 100%);
+}
+
+@media (max-width: 1616px) {
+  #bg-layer-front {
+    top: 31em;
+  }
+}
+
+@media (max-width: 1613px) {
+  section {
+    margin-bottom: 12em;
+  }
+}
+
+@media (max-width: 1313px) {
+  main {
+    overflow: visible;
+  }
+
+  figure>img {
+    position: relative;
+    z-index: 4;
+  }
+
+  #bg-layer-bottom {
+    top: unset;
+    bottom: 0;
+  }
+
+  #bg-layer-front {
+    top: unset;
+    bottom: 5px;
+    width: 100%;
+  }
+
+  #bg-layer-bottom {
+    bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 1313px) {
+  section {
+    margin-bottom: 0;
+  }
+
+  section>.custom-container {
+    gap: 0;
+  }
+
+  section>.custom-container>div {
+    background: linear-gradient(to bottom, #c5f7fc, #93d5db);
+    padding: 15px;
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 15px;
+    margin-bottom: -15px !important;
+  }
+
+  figure>img {
+    max-width: 550px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  section>.custom-container {
+    flex-direction: column-reverse;
+  }
+
+  section>.custom-container>div {
+    padding-top: 15px;
+  }
+
+  #bg-layer-front {
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #bg-layer-front {
+    top: 76%;
+  }
+
+  #bg-layer-bottom {
+    bottom: 0;
+  }
+
+  section>.custom-container>div {
+    padding-top: 15%;
+  }
+}
+
+.custom-round-border>h1,
+.custom-round-border>p,
+.custom-round-border>a {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+.custom-round-border>a {
+  margin-top: 15px;
+
+}
+
+.custom-round-border>p:first-child {
+  font-weight: 600 !important;
+}
+
+.custom-round-border>p:not(:first-child) {
+  font-weight: 500 !important;
+  color: #222222;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Then add additional custom code here
